@@ -14,16 +14,16 @@
         <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/robotics class 2.webp" height="650px" alt="First slide">
+                    <img class="d-block w-100 slide-image" src="images/homepage-carousel-1.png" height="650px" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h1 style="color: black; position: absolute; right: 45%; left: 45%; bottom: 40vh;">Robotics</h1>
+                        <h1 class="slide-text">Robotics Class for Eveyrone</h1>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="images/coding class 1.jpg" height="650px" alt="Second slide">
+                    <img class="d-block w-100 slide-image" src="images/homepage-carousel-2.webp" height="650px" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                    <h1 style="color: black; position: absolute; right: 45%; left: 45%; bottom: 40vh;">Coding</h1>
+                    <h1 class="slide-text">Coding for All Ages</h1>
                     </div>
                 </div>
             </div>
@@ -104,4 +104,5 @@
             <a href = "header.php"><button name="gotoRegister" class="glowButton">Register</button></a>
         </div>
     </body>
+    <?php include 'footer.php';?>
 </html>

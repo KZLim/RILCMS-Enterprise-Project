@@ -7,7 +7,7 @@
         <meta charset = "utf-8">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="header_footer.css">
     </head>
 
     <body>
@@ -19,7 +19,7 @@
               <td class="innerGrid"><a href="#">Our Projects</a></td>
               <td class="innerGrid"><a href="#">About Us</a></td>
               <td class="innerGrid"><a href="#">Contact Us</a></td>
-              <td class="innerGrid" style="padding-left: 370px"><a href="#">Register</a></span></td>
+              <td class="innerGrid" style="padding-left: 370px"><a href="register.php">Register</a></span></td>
             </tr>
           </table>
         </div>
