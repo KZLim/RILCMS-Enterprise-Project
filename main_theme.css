@@ -3,10 +3,27 @@ h1 {
     color: blue;
 }
 
+/**
 .flex-container {
     display: flex;
     flex-wrap: nowrap;
 }
+**/
+
+.slide-image{
+    filter: blur(3px);
+}
+
+.slide-text{
+    color: black; 
+    position: absolute; 
+    top: -300px;
+    left:20%;
+    right:20%;
+    color: white;
+    font-weight: bold;
+}
+
 
 .flex-container {
     display: flex;
@@ -15,7 +32,7 @@ h1 {
     text-align: center;
     margin: 20px;
     height: auto;
-  }
+}
 
 .flex-container:hover{
     margin: 0px;
@@ -61,6 +78,7 @@ h1 {
     transition-property: box-shadow, transform;
     border-color: white;
 }
+
 
 .glowButton:hover, .glowButton:focus, .glowButton:active{
     box-shadow: 0 0 20px white;
