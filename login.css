@@ -1,0 +1,118 @@
+body{
+    background-color: #C4DBF6
+}
+
+.title{
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+}
+.logo{
+    position: absolute;
+    left: 47%;
+    width: 100px;
+    height: 100px;
+    animation: rotate 10s infinite linear;
+    transform-style: preserve-3d;
+}
+@keyframes rotate {
+    10% {
+        transform: rotateY(360deg);
+      }
+    20% {
+        transform: rotateY(300deg);
+      }
+    30%{
+        transform: rotateY(270deg);
+    }
+    50%{
+        transform: rotateY(200deg);
+    }
+    70%{
+        transform: rotateY(180deg);
+    }
+    90%{
+        transform: rotateY(120deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+.formOuterContainer{
+    background-color: #8590AA;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+    box-shadow: #8590AA 0px 5px 30px 5px;
+}
+
+.formInnerContainer{
+    width: 280px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;;
+}
+
+.formField{
+    width: 280px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    margin-top: 10px;
+    font-size: 15px;
+    outline: none;
+    text-align: center;
+}
+
+.formField:focus{
+    border-radius: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid #B23850;
+    outline: none;
+    transition: 0.2s;
+}
+
+.glowButton{
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: #3B8BEB;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    margin-left: 65px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    margin-top: 20px;
+    border-color: #3B8BEB;
+}
+
+
+.glowButton:hover, .glowButton:focus, .glowButton:active{
+    box-shadow: 0 0 15px #3B8BEB;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: #3B8BEB;
+}
+.loginLINK{
+    color: #B23850;
+    font-size: 18px;
+}
+.olduserlabel{
+    font-size: 18px;
+
+}
+
+
+
+
