@@ -13,7 +13,7 @@
     <body>
         <div class="formOuterContainer">
             <h1 class="title">Employee Portal</h1>
-            <img class="logo" src="image/iot-learning-centre-low-resolution-logo-color-on-transparent-background.png" >
+            <img class="logo" src="images/iot-learning-centre-low-resolution-logo-color-on-transparent-background.png" >
 
             <form action="#" method="POST" class="formInnerContainer">
                 <input type="text" name="employeeID" class="formField" placeholder ="Employee ID">
