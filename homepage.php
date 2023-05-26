@@ -51,7 +51,6 @@
                     By doing, it is can spark more interest and creativity. At Thunder Robotics, we have kits for all classes 
                     you register and attend. Letting you on the first hand experience on all our projects.
                 </p>
-
             </div>
         </div>
 
@@ -103,6 +102,7 @@
                     Quickly, grab a spot with us and join us on our robotics journey</p>
             <a href = "header.php"><button name="gotoRegister" class="glowButton">Register</button></a>
         </div>
+
     </body>
     <?php include 'footer.php';?>
 </html>
