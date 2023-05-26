@@ -30,12 +30,9 @@
                 }
                 }
                 </script>
-
                 
                 <input name="signin" type="submit" value="Sign In" class="glowButton">
             </form>
         </div>
     </body>
-
-
 </html>
