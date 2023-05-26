@@ -1,0 +1,10 @@
+.courseformcontainer{
+    background-color: #8590AA;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 500px;
+    box-shadow: #8590AA 0px 5px 30px 5px;
+}
