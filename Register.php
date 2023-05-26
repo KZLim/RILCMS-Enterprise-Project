@@ -10,7 +10,7 @@
 <body>
     <div class="formcontainer">
         <h1 class="title">Student Register</h1>
-        <img class="logo" src="images/iot-learning-centre-low-resolution-logo-color-on-transparent-background.png" >
+        <a href="homepage.php"><img class="logo" src="images/back icon.png" ></a>
         <form class="detailform" action="" method="">
             <input type="text" class="input" name="username" placeholder="Name:" required>
 

@@ -41,12 +41,17 @@
         </div>
 
         <div class="copyright-section">
-            <div class="flex-section-one" style="text-align: left; padding-left: 110px;">
-                <span style="color: white; font-size: 10px;">Copyright Thunder Robotics</span>
-            </div>
-
-            <div class="flex-section-two" style="text-align: right; padding-right: 50px;">
-                <span style="color: white; font-size: 10px;"><a href="login.php" class="footer-link">RILCMS</span>
+            <div class="d-flex justify-content-around">
+                <div class="p-2"><span style="color: white; font-size: 10px;">Copyright Thunder Robotics</span></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"></div>
+                <div class="p-2"><span style="color: white; font-size: 10px;"><a href="login.php" class="footer-link">RILCMS</span>
             </div>
         </div>
     </body>
