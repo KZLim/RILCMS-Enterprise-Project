@@ -1,172 +1,47 @@
-
-.text1{
+.image-caption{
     position: absolute;
-    font-family: Helvetica;
-    font-size: 40px;
-    bottom: 500px;
-    right: 1000px;
+    top: 250px;
+    left: 200px;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    animation:slide-right 2s;
-}
-@keyframes slide-right{
-    from{
-        right: 1300px;
-    }
-    to{
-        right:1000px;
-    }
-}
-.text2{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 20px;
-    
-    bottom: 440px;
-    right: 890px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    animation:slide-up 2s;
-    
-}
-@keyframes slide-up{
-    from{
-        bottom: 100%;
-    }
-    to{
-        bottom: 440px;
-        
-    }
 }
 
-
-.text3{
-    position: absolute;
-    font-family: Helvetica;
-    font-size: 20px;
-  
-    bottom: 410px;
-    right: 640px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    animation:slide-left 2s;
-}
-@keyframes slide-left{
-    from{
-        right: 0%;
-    }
-    to{
-       right: 640px;
-    }
-}
-.scrollbutton{
-    position: absolute;
-    background-color: #B23850;
-    width: 200px;
-    font-size: 20px;
-    border: #B23850;
-    border-radius: 10px;
-    bottom: 360px;
-    right: 640px;
-    padding-left: 20px;
-    padding-right: 20px;
-    color: white;
-    animation:slide-left 2s;
-    transition: width 2s
-}
-
-@keyframes slide-left{
-    from{
-        right: 0%;
-    }
-    to{
-       right: 640px;
-    }
-}
-.scrollbutton:hover{
-    background-color:#3B8BEB ;
-    border-radius: 10px;
-    border-color: #3B8BEB;
-    box-shadow: 0 0 15px #3B8BEB;
-    cursor: pointer;
-    width: 220px;
-    color: white;
-}
-.tex4{
+.glowButton{
+    border: 1px solid;
     font-weight: bold;
-    color: black;
-}
-.text5{
-    margin-top: 20px;
+    background-color: #FFBFA0;
+    width: 150px;
+    height: 40px;
+    padding-top: 7px;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #3B8BEB;
-    font-family: helvetica;
-    font-weight: bold;
+    color: #616161;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    border-color: #DAF5FF;
 }
-.text6{
-    text-align: left;
-    color: black;
-    font-size:20px ;
-    font-family: calibri;
-    width: 700px;
-    font-weight: bold;
+
+.glowButton:hover, .glowButton:focus, .glowButton:active{
+    box-shadow: 0 0 20px #616161;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-color: white;
 }
-.img_class3{
-    border-radius: 60px;
-    position:absolute;
-    right: 800px;
-    margin-top: 40px;
-    
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px;
+    height: auto;
 }
-.text7{
-    text-align: right;
-    padding-right: 350px;
-    color: #3B8BEB;
-    font-weight: bold;
+
+.flex-item-left {
+    flex: 50%;
 }
-.text8{
-    font-size: 20px;
-    position: absolute;
-    right: 80px;
   
-    color: black;
-    font-size:20px ;
-    font-family: calibri;
-    width: 700px;
-    font-weight: bold;
+.flex-item-right {
+    flex: 50%;
 }
-
-.img_class4{
-    border-radius: 60px;
-    position:absolute;
-    right: 100px;
-
-    margin-top: 40px;
-}
-.text9{
-    
-    text-align: left;
-    
-    color: #3B8BEB;
-    font-weight: bold;
-    margin-top: 450px;
-    padding-left: 100px;
-}
-.text10{
-    font-size: 20px;
-    color: black;
-    font-size:20px ;
-    font-family: calibri;
-    width: 700px;
-    font-weight: bold;
-    padding-left: 100px;
-}
-
-
-
-
