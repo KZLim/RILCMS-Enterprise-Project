@@ -23,10 +23,11 @@
 }
 
 .glowButton:hover, .glowButton:focus, .glowButton:active{
-    box-shadow: 0 0 20px #616161;
+    box-shadow: 0 0 20px white;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     border-color: white;
+    color: white;
 }
 
 .flex-container {

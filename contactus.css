@@ -22,10 +22,11 @@
 }
 
 .glowButton:hover, .glowButton:focus, .glowButton:active{
-    box-shadow: 0 0 20px #616161;
+    box-shadow: 0 0 20px white;
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     border-color: white;
+    color: white;
 }
 
 .flex-container {
@@ -37,10 +38,12 @@
     height: auto;
     background-color: #87F6FF; 
     color: #616163;
+    border: 1px solid #616161;
 }
 
 .flex-item-left {
     flex: 50%;
+    border-right: 1px solid #616161;
 }
   
 .flex-item-right {
@@ -48,7 +51,7 @@
 }
 
 .thirdSection{
-    background-color: #44ffd2;
+    background-color: #daf5ff;
     height: auto;
     padding: 20px;
 }
