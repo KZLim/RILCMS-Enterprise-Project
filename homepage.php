@@ -49,7 +49,7 @@
                 <img src="images/robotics kit.png" height="auto" width="500px">
             </div>
 
-            <div class="flex-item-right" style="background-color: #44FFD2; color: #616163;">
+            <div class="flex-item-right" style="background-color: #87F6FF; color: #616163;">
                 <h2 style="margin-top: 100px;">Hands - On Learning</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     We are a strong believer of learning by doing. Hands on experince is crucial for learning new technology.
@@ -60,7 +60,7 @@
         </div>
 
         <div class="flex-container">
-            <div class="flex-item-left" style="background-color: #44FFD2; color: #616163">
+            <div class="flex-item-left" style="background-color: #87F6FF; color: #616163">
                 <h2 style="margin-top: 100px;">Interactive Class and Committed Staff</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     We as technology and robotics lover too are committed to bringing the very best class experience to you
@@ -78,7 +78,7 @@
             <div class="flex-item-left">
                 <img src="images/comfortable environment.jpg" height="400px" width="500xp">
             </div>
-            <div class="flex-item-right" style="background-color: #FFBFA0; color: #616163">
+            <div class="flex-item-right" style="background-color: #87F6FF; color: #616163">
                 <h2 style="margin-top: 100px;">Comfortable classrom across all centers</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     Comfortable Classroom across all of our centers. Our centers are equip with the upmost comfortable environment
@@ -88,7 +88,7 @@
         </div>
 
         <div class="flex-container">
-            <div class="flex-item-left" style="background-color: #FFBFA0; color: #616163">
+            <div class="flex-item-left" style="background-color: #87F6FF; color: #616163">
                 <h2 style="margin-top: 100px;">A variation of Courses</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     We offer multiple course in our center acorss Penang. We have beginner class for sparking interest to advance
@@ -102,8 +102,8 @@
         </div>
 
         <div class="thirdSection">
-            <h2 style="color: #616163; padding-top: 40px; text-align: center;">Join Us Today!</h2>
-            <p style="font-size: 25px; padding: 20px; text-align: center; color: #616163;">
+            <h2 style="color: white; padding-top: 40px; text-align: center;">Join Us Today!</h2>
+            <p style="font-size: 25px; padding: 20px; text-align: center; color: white;">
                     Quickly, grab a spot with us and join us on our robotics journey</p>
             <a href = "header.php"><button name="gotoRegister" class="glowButton">Register</button></a>
         </div>
