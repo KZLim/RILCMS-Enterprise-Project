@@ -16,7 +16,7 @@
         </div>
 
         <div>
-            <img src="images/about_us_img.jpg" alt="firstimg" width="100%" height="650px" style="filter: blur(5px);">
+            <img src="images/about_us_img.jpg" alt="firstimg" width="100%" height="650px" style="filter: blur(1px);">
             <h1 class="image-caption"><b><u>About Us</u></b></h1>
             <h2  class="image-caption" style="top: 300px; left:200px">Want to Know More About Us ?<br/>
                 Take a look at our legacy and what we aim to built<br/> See what we have in stored. </h2>
@@ -28,7 +28,7 @@
                 <img src="images/interactive class.webp" height="400px" width="500xp">
             </div>
 
-            <div class="flex-item-right" style="background-color: #44FFD2; color: #616163;">
+            <div class="flex-item-right" style="background-color: #87F6FF; color: #616163;">
                 <h2 style="margin-top: 50px;">Hands - On Learning</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     We are a strong believer of learning by doing. Hands on experince is crucial for learning new technology.
@@ -39,7 +39,7 @@
         </div>
 
         <div class="flex-container">
-            <div class="flex-item-left" style="background-color: #44FFD2; color: #616163">
+            <div class="flex-item-left" style="background-color: #87F6FF; color: #616163">
                 <h2 style="margin-top: 70px;">Interactive Class and Committed Staff</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     We as technology and robotics lover too are committed to bringing the very best class experience to you
@@ -58,7 +58,7 @@
                 <img src="images/interactive class.webp" height="400px" width="500xp">
             </div>
 
-            <div class="flex-item-right" style="background-color: #44FFD2; color: #616163"> 
+            <div class="flex-item-right" style="background-color: #87F6FF; color: #616163"> 
                 <h2 style="margin-top: 70px;">Interactive Class and Committed Staff</h2>
                 <p style="font-size: 25px; padding: 20px;">
                     We as technology and robotics lover too are committed to bringing the very best class experience to you

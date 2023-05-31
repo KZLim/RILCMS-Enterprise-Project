@@ -37,6 +37,13 @@
     text-align: center;
     margin: 0px;
     height: auto;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
 }
 
 .flex-item-left {
@@ -45,4 +52,8 @@
   
 .flex-item-right {
     flex: 50%;
+}
+
+.image-shadow{
+    filter: drop-shadow(1px 1px 2px black);
 }
