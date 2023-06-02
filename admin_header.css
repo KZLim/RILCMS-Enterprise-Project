@@ -1,0 +1,18 @@
+.header{
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    height: 70px;
+    background-color: #8590AA;
+    z-index: 10;
+}
+
+.header-icon{
+    margin-left: 15px;
+}
+
+.title{
+    margin-top: 7px;
+    margin-left: -70px;
+}
+
+
