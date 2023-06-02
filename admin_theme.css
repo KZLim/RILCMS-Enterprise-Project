@@ -1,17 +1,10 @@
-.header{
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    height: 70px;
-    background-color: #8590AA;
-}
-
-.footer-flex-container{
+.flex-container{
     display: flex;
     flex-direction: row;
     font-size: 30px;
     text-align: center;
     height: 200px;
-    padding-left: 100px;
+    width: 100%;
 }
 
 .flex-section-one {
@@ -19,7 +12,7 @@
 }
 
 .flex-section-two{
-   flex: auto;
+    flex: auto;
 }
 
 .flex-section-three{
@@ -29,13 +22,20 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 70%;
-  }
+    width: 80%;
+    padding: 5px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
   
-  .card:hover {
+.card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
+    width: 85%;
+    height: 150px;
+    padding-top: 35px;
+}
   
-  .container {
+.container {
     padding: 2px 16px;
-  }
+}
