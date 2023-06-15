@@ -1,3 +1,7 @@
+a:link{
+    text-decoration: none;
+}
+
 .flex-container{
     display: flex;
     flex-direction: row;
@@ -8,15 +12,15 @@
 }
 
 .flex-section-one {
-    flex: auto;
+    flex: 250px;
 }
 
 .flex-section-two{
-    flex: auto;
+    flex: 250px;
 }
 
 .flex-section-three{
-   flex: auto;
+    flex: 250px;
 }
 
 .card {
@@ -33,7 +37,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     width: 85%;
     height: 150px;
-    padding-top: 35px;
+    padding-top: 25px;
 }
   
 .container {

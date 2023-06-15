@@ -18,40 +18,40 @@
             $dbc=mysqli_connect("localhost","root","");
             mysqli_select_db($dbc,"rilcms");
 
-            $query1 = mysqli_query($dbc,"SELECT DISTINCT asset_type FROM hardware_asset");
-            $query2 = mysqli_query($dbc,"SELECT COUNT(asset_type) as assetCountData FROM hardware_asset GROUP BY asset_type;");
-            $query3 = mysqli_query($dbc,"SELECT COUNT(asset_status), sum(case when asset_status = 'Inventory' then 1 else 0 end) AS inInventoryData, sum(case when asset_status = 'Check Out' then 1 else 0 end) AS checkOutData FROM hardware_asset GROUP BY asset_type");
+            $softwareNameRetrieve = $_GET['softwareName'];
+
+            $query1 = mysqli_query($dbc,"SELECT * FROM software_license WHERE software_name = '$softwareNameRetrieve'");
+            ///$query2 = mysqli_query($dbc,"SELECT COUNT() as assetCountData FROM hardware_asset GROUP BY asset_type;");
+            //$query3 = mysqli_query($dbc,"SELECT COUNT(asset_status), sum(case when asset_status = 'Inventory' then 1 else 0 end) AS inInventoryData, sum(case when asset_status = 'Check Out' then 1 else 0 end) AS checkOutData FROM hardware_asset GROUP BY asset_type");
             //$query4 = mysqli_query($dbc,"SELECT COUNT(asset_status) as checkOutData FROM hardware_asset WHERE asset_status = 'Check Out' GROUP BY asset_type;");
             //$totalUser = mysqli_query($dbc,"SELECT COUNT(username) as userCount FROM useraccount");
             
-
-           
            echo"<div class=\"listing-section\">";
-                while (($row1 = $query1->fetch_assoc()) && ($row2 = $query2->fetch_assoc()) && ($row3 = $query3->fetch_assoc())){
-                    $assetTypeData= $row1['asset_type'];
-                    $countData = $row2['assetCountData'];
-                    $inInventoryCount = $row3['inInventoryData'];
-                    $checkOutCount = $row3['checkOutData'];
-                        echo'<div class="card"><a href="hardware_list.php?assetType='.$assetTypeData.'">
+                while (($row1 = $query1->fetch_assoc())){
+                    $softwafeNameData= $row1['software_name'];
+                    $softwarePriceData = $row1['software_price'];
+                    $licenseKeyData = $row1['license_key'];
+                    $employeeHolderData = $row1['employee_ID'];
+                        echo'<div class="card">
                             <div class="card-content">
                                 <div class="container text-center">
                                     <div class="row">
                                         <div class="col">
-                                            <h5>Asset Type: <h3>'.$assetTypeData.'</h3> </h5>
+                                            <h5>Software Name: <h3>'.$softwafeNameData.'</h3> </h5>
                                         </div>
                                         <div class="col">
-                                            <h5>Total Asset: <h3>'.$countData.'</h3></h5>
+                                            <h5>Software Price: <h3>'.$softwarePriceData.'</h3></h5>
                                         </div>
                                         <div class="col">
-                                            <h5>Check Out: <h3>'.$checkOutCount.'</h3></h5>
+                                            <h5>License Key: <h3>'.$licenseKeyData.'</h3></h5>
                                         </div>
                                         <div class="col">
-                                            <h5>Inventory: <h3>'.$inInventoryCount.'</h3></h5>
+                                            <h5>Holder: <h3>'.$employeeHolderData.'</h3></h5>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </a></div>';
+                        </div>';
                 }
             echo"</div>";
             ?>
