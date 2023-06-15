@@ -124,19 +124,19 @@
 
         <div class="flex-container" style="margin-top:70px;">
             <div class="flex-section-one">
-                 <div class="card">
+                <a href="add_employee.php"><div class="card">
                     <div class="container">
-                        <p>Place Holder</p> 
+                        <p>Add Employee</p> 
                     </div>
-                </div>
+                </div></a>
             </div>
 
             <div class="flex-section-two">
-                <div class="card">
+                <a href="remove_employee.php"><div class="card">
                     <div class="container">
-                        <p>Place Holder</p> 
+                        <p>Remove Employee</p> 
                     </div>
-                </div>
+                </div></a>
             </div>
 
             <div class="flex-section-two">
