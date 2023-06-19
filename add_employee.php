@@ -94,7 +94,7 @@
 
                     echo '<script type="text/javascript">'; 
                     echo 'alert("Insert Successfully");'; 
-                    echo 'window.location.href = "admin_dashboard.php";';
+                    echo 'window.location.href = "admin_dashboard.php"';
                     echo '</script>';
                     
                 } else {
@@ -102,7 +102,6 @@
                     echo "Something Went Wrong. Please Check adn Try Again " . mysqli_error($conn);
                     
                 }
-
             }
         ?>
     </body>

@@ -32,7 +32,7 @@
             </div>
             <div class="d-flex align-items-center">
               <div class="d-flex justify-content-center">
-                <div class="p-2"><a href="register.php">Register</a></div>
+                <div class="p-2"><a href="register.php">Enrol Now</a></div>
               </div>
             </div>
           </div>
