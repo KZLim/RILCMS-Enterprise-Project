@@ -88,12 +88,17 @@
                     while ($row = $query1->fetch_assoc()){
                         $sICNumData = $row['student_IC'];
                     }
-                    
-                    
+                       
                     $query = mysqli_query($dbc,"UPDATE student_course set payment_status = 'Paid' WHERE student_IC='".$sICNumData."' 
-                                                AND course_name ='".$_POST['courseName']."' ORDER BY ID DESC LIMIT 1");
-                    header("Location: homepage.php");
+                                                AND course_name ='".$_POST['courseName']."'");
+
+                    echo '<script>alert("You Have Successfully Registered With Us.\nYour Bank Receipt and Registered IC Number can be act as the Invoice")</script>';
+                    echo"<script>window.location.href = \"http://localhost/RILCMS/homepage.php\"</script>";
+                    //header("Location: homepage.php");
+                    
                 }
+
+                
             }
         ?>
     </body>

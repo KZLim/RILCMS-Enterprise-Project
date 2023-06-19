@@ -15,10 +15,9 @@
             
             <form class="detailform" action="coursepage.php" method="POST" style="padding-top:20px;">
                 <select class="input" name="courseName">
-                    <option value="Subjects Selection" selected>Subjects Selection</option>
-                    <option value="Mechanical Engineering">Mechanical Engineering</option>
-                    <option value="Power Electronics">Power Electronics</option>
-                    <option value="Electric Drives">Electric Drives</option>
+                    <option value="Robotics Entry Level">Robotics Entry Level Class</option>
+                    <option value="Robotics Advance Level">Robotics Advance Level Class</option>
+                    <option value="Arduino Class">Arduino Class</option>
                     
                 </select>
 
@@ -27,11 +26,9 @@
                     <option value="Monday |9am-11am">Monday |9am-11am</option>
                     <option value="Wednesday |12pm-3pm">Wednesday |12pm-3pm</option>
                     <option value="Thursday |1pm-4pm">Thursday |1pm-4pm</option>
-                
                 </select>
 
                 <select class="input" name="branchName">
-                    <option value="Branch Name" selected>Branch Name</option>
                     <option value="Ayer Itam Branch">Ayer Itam Branch</option>
                     <option value="Tanjung Bungah Branch">Tanjung Bungah Branch</option>
                     <option value="Bayan Lepas Branch">Bayan Lepas Branch</option>
@@ -67,11 +64,12 @@
                     mysqli_select_db($dbc,"rilcms");
 
                     //This query 1 is to get the IC of the student. IC is not pass directly from the previous form becuase it is sensitive data
-                    $query1 = mysqli_query($dbc,"SELECT student_IC FROM student WHERE student_name = '".$_POST['sName']."'");
+                    $query1 = mysqli_query($dbc,"SELECT * FROM student WHERE student_name = '".$_POST['sName']."'");
                     
                     //Fetch data of query1
                     while ($row = $query1->fetch_assoc()){
                         $sICNumData = $row['student_IC'];
+                        $emailAddressData = $row['student_email'];
                     }
 
                     //After selecting course, get the teacher detail from employee table to fill in.
@@ -91,11 +89,11 @@
 
                     if($checkRecordExistence == 0){
                         //Insert into student_course table with all the relevant information.
-                        $query = mysqli_query($dbc,"INSERT INTO student_course (student_IC, course_name, payment_status, section,
-                        employee_name, branch_name) VALUES ('$sICNumData', '$sCourseNameData', '$paymentStatusData', '$sTimetableData',
+                        $query = mysqli_query($dbc,"INSERT INTO student_course (student_IC, student_name, course_name, payment_status, section,
+                        employee_name, branch_name) VALUES ('$sICNumData', '$sName', '$sCourseNameData', '$paymentStatusData', '$sTimetableData',
                         '$employeeNameData', '$sBranchNameData')");
                     
-                        header("Location: payment.php?sName=$sName&courseName=$sCourseNameData");
+                        header("Location: payment.php?sName=$sName&courseName=$sCourseNameData&email=$emailAddressData");
                     }
                     else{
                         echo '<script>alert("You are registered in this class. Please contact us if you need any help.")</script>';

@@ -105,7 +105,7 @@
             <h2 style="color: white; padding-top: 40px; text-align: center;">Join Us Today!</h2>
             <p style="font-size: 25px; padding: 20px; text-align: center; color: white;">
                     Quickly, grab a spot with us and join us on our robotics journey</p>
-            <a href = "header.php"><button name="gotoRegister" class="glowButton">Register</button></a>
+            <a href = "register.php"><button name="gotoRegister" class="glowButton">Register</button></a>
         </div>
 
     </body>

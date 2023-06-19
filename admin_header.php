@@ -9,12 +9,29 @@
     </head>
 
     <body>
-        <div class="header">
-            <div class="d-flex justify-content-between">
-                <a href="admin_dashboard.php"><image src="images/back icon2.png" width="60px" height="70px" class="header-icon"></a>
-                <h1 style="color: white; text-align:center;" class="title">Admin Dashboard</h1>
-                <span></span>
-            </div>
-        </div>
+        <?php
+            session_start();
+            $roleCheck = substr($_SESSION['identifier_id'],0,1);
+
+            if($roleCheck == "A"){
+                echo'<div class="header">
+                    <div class="d-flex justify-content-between">
+                        <a href="admin_dashboard.php"><image src="images/back icon2.png" width="60px" height="70px" class="header-icon"></a>
+                        <h1 style="color: white; text-align:center;" class="title">Admin Dashboard</h1>
+                        <span></span>
+                    </div>
+                </div>';
+            }
+            else if($roleCheck == "T"){
+                echo'<div class="header">
+                    <div class="d-flex justify-content-between">
+                        <a href="teacher_dashboard.php"><image src="images/back icon2.png" width="60px" height="70px" class="header-icon"></a>
+                        <h1 style="color: white; text-align:center;" class="title">Admin Dashboard</h1>
+                        <span></span>
+                    </div>
+                </div>';
+            }
+            
+        ?>
     </body>
 </html>
