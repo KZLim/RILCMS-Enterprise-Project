@@ -15,7 +15,7 @@
 
     <body>
         <form class="detailform" action="teacher_dashboard.php" method="POST" style="padding-top:70px;">
-            <select class="input" name="session" style=" margin-left: 500px;">
+            <select class="input" name="section" style=" margin-left: 500px;">
                 <option value="Schedule Time" selected>Filter Session</option>
                 <option value="Monday |9am-11am">Monday |9am-11am</option>
                 <option value="Wednesday |12pm-3pm">Wednesday |12pm-3pm</option>
@@ -32,7 +32,7 @@
 
                 echo'<h1 style="text-align: center;">Generated Student List</h1>';
 
-                $getSectionChocie = $_POST['session'];
+                $getSectionChocie = $_POST['section'];
 
                 $dbc=mysqli_connect("localhost","root","");
                 mysqli_select_db($dbc,"rilcms");

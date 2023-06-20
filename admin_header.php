@@ -18,7 +18,7 @@
                     <div class="d-flex justify-content-between">
                         <a href="admin_dashboard.php"><image src="images/back icon2.png" width="60px" height="70px" class="header-icon"></a>
                         <h1 style="color: white; text-align:center;" class="title">Admin Dashboard</h1>
-                        <span></span>
+                        <h1 style="color: white; padding-right: 5px;" class="title"><a href="logout.php">Logout</a></h1>
                     </div>
                 </div>';
             }
@@ -27,7 +27,7 @@
                     <div class="d-flex justify-content-between">
                         <a href="teacher_dashboard.php"><image src="images/back icon2.png" width="60px" height="70px" class="header-icon"></a>
                         <h1 style="color: white; text-align:center;" class="title">Admin Dashboard</h1>
-                        <span></span>
+                        <h1 style="color: white; padding-right: 5px;" class="title"><a href="logout.php">Logout</a></h1>
                     </div>
                 </div>';
             }
