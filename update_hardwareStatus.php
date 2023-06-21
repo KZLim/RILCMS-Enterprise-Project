@@ -69,7 +69,7 @@
                     
                 } else {
                     
-                    echo "Something Went Wrong. Please Check adn Try Again " . mysqli_error($conn);
+                    echo "Something Went Wrong. Please Check and Try Again " . mysqli_error($conn);
                     
                 }
 

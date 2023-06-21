@@ -140,11 +140,11 @@
             </div>
 
             <div class="flex-section-two">
-                <div class="card">
+                <a href="analytics_panel.php"><div class="card">
                     <div class="container">
-                        <p>Place Holder</p> 
+                        <p>Analytics Panel</p> 
                     </div>
-                </div>
+                </div></a>
             </div>
         </div>
     </body>
