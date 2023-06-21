@@ -42,14 +42,18 @@
                                     
                 $dbc=mysqli_connect("localhost","root","");
                 mysqli_select_db($dbc,"rilcms");
-                    
-                $sNameData = $_POST['studentName'];
-                $sICNumData = $_POST['studentIC'];
-                $sAddressData = $_POST['studentAddress'];
-                $sContactData = $_POST['studentContact'];
-                $sAgeData = $_POST['studentAge'];
-                $sEmailData = $_POST['studentEmail'];
-                $sGenderData = $_POST['studentGender'];
+                
+                //get and sanitize the data
+                $sNameData = htmlspecialchars(strip_tags($_POST['studentName']));
+                $sICNumData = htmlspecialchars(strip_tags($_POST['studentIC']));
+                $sAddressData = htmlspecialchars(strip_tags($_POST['studentAddress']));
+                $sContactData = htmlspecialchars(strip_tags($_POST['studentContact']));
+                $sAgeData = htmlspecialchars(strip_tags($_POST['studentAge']));
+                $sEmailData = htmlspecialchars(strip_tags($_POST['studentEmail']));
+                $sGenderData = htmlspecialchars(strip_tags($_POST['studentGender']));
+                
+                //the condition for the database action. If nothing is violating the check then it will be registered. Default True.
+                $goAhead = true;
 
                 $result = mysqli_query($dbc,"SELECT student_IC FROM student WHERE student_IC = '".$sICNumData."'");
                 
@@ -59,7 +63,32 @@
                     //header("refresh:2; Location: coursepage.php?sName=$sNameData");
                     echo '<script>alert("Record Found, You are existing student. Proceed Next")</script>';
                 }
-                else{
+
+                if(strlen($sICNumData) > 12 || strlen($sICNumData) < 12){
+                    $goAhead = false;
+                    echo '<script type="text/javascript">'; 
+                    echo 'alert("IC Number is Invalid. Please Try Again.");'; 
+                    echo 'window.location.href = "register.php"';
+                    echo '</script>';
+                }
+
+                if(strlen($sContactData) > 11 || strlen($sContactData) <10){
+                    $goAhead = false;
+                    echo '<script type="text/javascript">'; 
+                    echo 'alert("Phone Number is Invalid. Please Try Again.");'; 
+                    echo 'window.location.href = "register.php"';
+                    echo '</script>';
+                }
+
+                if($sAgeData < 7 || $sAgeData > 25){
+                    $goAhead = false;
+                    echo '<script type="text/javascript">'; 
+                    echo 'alert("Sorry! Your Age is Outside The Set Limit");'; 
+                    echo 'window.location.href = "register.php"';
+                    echo '</script>';
+                }
+
+                if($goAhead){
                     $query = mysqli_query($dbc,"INSERT INTO student (student_IC, student_name, student_address, student_contact, student_age,
                     student_gender, student_email) VALUES ('$sICNumData', '$sNameData', '$sAddressData', '$sContactData',
                     '$sAgeData', '$sGenderData', '$sEmailData')");

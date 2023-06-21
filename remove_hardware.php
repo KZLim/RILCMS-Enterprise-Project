@@ -66,7 +66,7 @@
                     echo '</script>';
                     
                 } else if ($queryStatus == false){
-                    echo "Something Went Wrong. Please Check adn Try Again ";
+                    echo "Something Went Wrong. Please Check and Try Again ";
                 }
 
             }
