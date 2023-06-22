@@ -69,7 +69,6 @@
                             $goAhead = true;
                             session_start();
                             $_SESSION["identifier_id"] = $data1;
-                            $_SESSION["identifier_name"] = $data2;
                             echo'<script>window.location.href = "admin_dashboard.php"</script>';
                         }
                         else{
