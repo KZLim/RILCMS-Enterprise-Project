@@ -175,7 +175,7 @@
                 scales: {
                     y: {
                         beginAtZero: true,
-                        suggestedMax: Math.max(...dataPoints.map(dataPoint => Math.max(dataPoint.yValue2, dataPoint.yValue3)))                 
+                        suggestedMax: Math.max(...dataPoints2.map(dataPoint => Math.max(dataPoint.yValue2, dataPoint.yValue3)))                 
                     }
                 },
                 plugins: {
@@ -185,7 +185,7 @@
                             label: function(context) {
                                 var datasetIndex = context.datasetIndex;
                                 var dataIndex = context.dataIndex;
-                                var dataPoint = dataPoints[dataIndex];
+                                var dataPoint = dataPoints2[dataIndex];
                                 if (datasetIndex === 1) {
                                     return "Data 2: " + dataPoint.leastCourseLabel; // Set hover indicator name for Data 2
                                 }

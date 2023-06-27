@@ -20,7 +20,7 @@
 
             $query1 = mysqli_query($dbc,"SELECT DISTINCT asset_type FROM hardware_asset");
             $query2 = mysqli_query($dbc,"SELECT COUNT(asset_type) as assetCountData FROM hardware_asset GROUP BY asset_type;");
-            $query3 = mysqli_query($dbc,"SELECT COUNT(asset_status), sum(case when asset_status = 'Inventory' then 1 else 0 end) AS inInventoryData, sum(case when asset_status = 'Check Out' then 1 else 0 end) AS checkOutData FROM hardware_asset GROUP BY asset_type");
+            $query3 = mysqli_query($dbc,"SELECT COUNT(asset_status), sum(case when asset_status = 'Inventory' then 1 else 0 end) AS inInventoryData, sum(case when asset_status = 'Checked Out' then 1 else 0 end) AS checkOutData FROM hardware_asset GROUP BY asset_type");
             //$query4 = mysqli_query($dbc,"SELECT COUNT(asset_status) as checkOutData FROM hardware_asset WHERE asset_status = 'Check Out' GROUP BY asset_type;");
             //$totalUser = mysqli_query($dbc,"SELECT COUNT(username) as userCount FROM useraccount");
             
