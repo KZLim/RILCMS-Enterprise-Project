@@ -10,7 +10,7 @@
         <?php include 'admin_header.php';?>
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
             <form action="new_software.php" method="POST" class="remove-hardware-container">
 
                 <h1 class="heading">New Software Asset</h2>

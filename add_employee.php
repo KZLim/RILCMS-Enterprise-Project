@@ -11,7 +11,7 @@
 
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
 
         <form action="add_employee.php" method="POST" class="add-employee-container" >
 

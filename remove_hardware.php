@@ -11,7 +11,7 @@
 
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
 
         <form action="remove_hardware.php" method="POST" class="remove-hardware-container" >
 

@@ -71,6 +71,14 @@
         </div>
 
         <?php
+            use PHPMailer\PHPMailer\PHPMailer;
+            use PHPMailer\PHPMailer\Exception;
+            use PHPMailer\PHPMailer\SMTP;
+
+            require 'phpmailer/src/PHPMailer.php';
+            require 'phpmailer/src/Exception.php';
+            require 'phpmailer/src/SMTP.php';
+
             if(isset($_POST['payment_submit'])){
                 $paymentMethodData = $_POST['paymentMethod'];
 
@@ -78,23 +86,61 @@
 
                     $dbc=mysqli_connect("localhost","root","");
                     mysqli_select_db($dbc,"rilcms");
-                        
+
                     $sCourseNameData = $_POST['courseName'];
 
                     //This query 1 is to get the IC of the student. IC is not pass directly from the previous form becuase it is sensitive data
-                    $query1 = mysqli_query($dbc,"SELECT student_IC FROM student WHERE student_name = '".$_POST['sName']."'");
+                    $query1 = mysqli_query($dbc,"SELECT * FROM student WHERE student_name = '".$_POST['sName']."'");
                     
                     //Fetch data of query1
                     while ($row = $query1->fetch_assoc()){
                         $sICNumData = $row['student_IC'];
+                        $emailData = $row['student_email'];
                     }
                        
-                    $query = mysqli_query($dbc,"UPDATE student_course set payment_status = 'Paid' WHERE student_IC='".$sICNumData."' 
-                                                AND course_name ='".$_POST['courseName']."'");
+                    $query2 = mysqli_query($dbc,"UPDATE student_course set payment_status = 'Paid' WHERE student_IC='".$sICNumData."' 
+                                                AND course_name ='".$_POST['courseName']."'");   
+                                                
+                    $query3 = mysqli_query($dbc,"SELECT * FROM student_course WHERE student_IC='".$sICNumData."'");
+                    while ($row = $query3->fetch_assoc()){
+                        $mailIC = $row['student_IC'];
+                        $mailSName = $row['student_name'];
+                        $mailCourse = $row['course_name'];
+                        $mailCourseSection = $row['section'];
+                        $mailBranch = $row['branch_name'];
+                    }
+
+                                           
+                    $mail=new PHPMailer (true);
+                    $mail->isSMTP();
+                    $mail->Host='smtp.gmail.com';
+                    $mail->SMTPAuth=true;
+                    $mail->Username='lowzhanxian9218@gmail.com';
+                    $mail->Password='wwsneeazwfnjxgqz';
+                    $mail->SMTPSecure='ssl';
+                    $mail->Port=465;
+                    $mail->setFrom('lowzhanxian9218@gmail.com');
+                    $mail->addAddress($emailData);
+                    $mail->isHTML(true);
+                    
+                    //$mail->CardEmail=$_POST["cardemail"];
+                    // $mail->CardName=$_POST["cardname"];
+                    $mail->Subject="Register Confirmation from Thunder Robotics";
+
+                    $mail->Body = "Hi, we are from Thunder Robotics. <br>The below are the register information that you have made. Please check the details below:<br>";
+                    $mail->Body .= "Student IC: ".$mailIC."<br>";
+                    $mail->Body .= "Student Name: ".$mailSName."<br>";
+                    $mail->Body .= "Course Selected: ".$mailCourse."<br>";
+                    $mail->Body .= "Time Slot: ".$mailCourseSection."<br>";
+                    $mail->Body .= "Branch Selected: ".$mailBranch."<br><br><br>";
+                    $mail->Body .= "Best Regards,<br>Thunder Robotics Team";
+                        
+                    $mail->send();
 
                     echo '<script>alert("You Have Successfully Registered With Us.\nYour Bank Receipt and Registered IC Number can be act as the Invoice")</script>';
                     echo"<script>window.location.href = \"http://localhost/RILCMS/homepage.php\"</script>";
                     //header("Location: homepage.php");
+                    
                     
                 }
 

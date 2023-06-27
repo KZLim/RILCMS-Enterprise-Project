@@ -10,7 +10,7 @@
         <?php include 'admin_header.php';?>
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
 
         <form action="update_hardwareStatus.php" method="POST" class="edit-hardware-container" >
 

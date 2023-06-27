@@ -11,7 +11,7 @@
         <?php include 'admin_header.php';?>
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
             <form action="add_license.php" method="POST" class="remove-hardware-container">
 
                 <h1 class="heading">Add License Key</h2>

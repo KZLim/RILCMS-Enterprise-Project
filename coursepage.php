@@ -84,7 +84,6 @@
                     $query3 = mysqli_query($dbc,"SELECT * FROM student_course WHERE student_IC = '".$sICNumData."' 
                                                 AND course_name = '".$sCourseNameData."'");
 
-                    
                     $checkRecordExistence = mysqli_num_rows($query3);
 
                     if($checkRecordExistence == 0){
