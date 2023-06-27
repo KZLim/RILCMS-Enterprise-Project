@@ -26,7 +26,7 @@
                 echo'<div class="header">
                     <div class="d-flex justify-content-between">
                         <a href="teacher_dashboard.php"><image src="images/back icon2.png" width="60px" height="70px" class="header-icon"></a>
-                        <h1 style="color: white; text-align:center;" class="title">Admin Dashboard</h1>
+                        <h1 style="color: white; text-align:center;" class="title">Teacher Dashboard</h1>
                         <h1 style="color: white; padding-right: 5px;" class="title"><a href="logout.php" style="color: white; text-decoration: none;">Logout</a></h1>
                     </div>
                 </div>';

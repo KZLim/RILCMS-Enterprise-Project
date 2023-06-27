@@ -27,7 +27,7 @@
                 <div class="p-2"><a href="programmes.php">Programmes</a></div>
                 <div class="p-2"><a href="ourProjects.php">Our Projects</a></div>
                 <div class="p-2"><a href="aboutUs.php">About Us</a></div>
-                <div class="p-2"><a href="contactUs.php">Contact Us</a></div>
+                <div class="p-2"><a href="locateUs.php">Locate Us</a></div>
               </div>
             </div>
             <div class="d-flex align-items-center">
