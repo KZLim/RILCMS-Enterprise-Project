@@ -10,7 +10,7 @@
         <?php include 'admin_header.php';?>
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
         <form action="add_hardware.php" method="POST" class="add-hardware-container" >
 
             <h1 class="heading">Add Hardware</h2>

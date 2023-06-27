@@ -9,9 +9,9 @@
         <link rel="stylesheet" href="form.css">
         <?php include 'admin_header.php';?>
     </head>
-    <body>
-        
-        <form action="" method="POST" class="remove-employee-container" >
+
+    <body style="background-color: #daf5ff;">
+        <form action="remove_employee.php" method="POST" class="remove-employee-container" >
 
             <h1 class="heading">Remove Employee</h2>
 

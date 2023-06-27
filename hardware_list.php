@@ -12,7 +12,7 @@
         ?>
     </head>
 
-    <body>
+    <body style="background-color: #daf5ff;">
         <?php
 
             $dbc=mysqli_connect("localhost","root","");
