@@ -4,6 +4,26 @@
     left: 200px;
     color: white;
 }
+.list {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    
+    
+  }
+
+  .list li::before {
+    content: '• '; /* Add the desired list label here */
+  }
+.list li{
+    font-weight: normal;
+}
+h3{
+    font-size: 30px;
+    color: black;
+
+}
 
 .glowButton{
     border: 1px solid;
@@ -52,8 +72,48 @@
   
 .flex-item-right {
     flex: 50%;
+    
 }
 
 .image-shadow{
     filter: drop-shadow(1px 1px 2px black);
 }
+.click-button {
+    display: inline-block;
+    background-color: #FFBFA0;
+    color: #616161;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.click-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -10px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #616161;
+    transition: transform 0.3s ease;
+}
+
+.click-button:hover {
+    background-color: #DAF5FF;
+    color: black;
+}
+
+.click-button:hover::before {
+    transform: translateX(2px);
+    
+}
+
+
