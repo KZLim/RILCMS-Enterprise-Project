@@ -25,45 +25,57 @@
 
         <div class="flex-container" id="knowMore">
             <div class="flex-item-left">
-                <img src="images/interactive class.webp" height="400px" width="500xp">
+                <img src="images/aboutus-ourmission.jpg" height="400px" width="500xp">
             </div>
 
             <div class="flex-item-right" style="background-color: #87F6FF; color: #616163;">
-                <h2 style="margin-top: 50px;">Hands - On Learning</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                    We are a strong believer of learning by doing. Hands on experince is crucial for learning new technology.
-                    By doing, it is can spark more interest and creativity. At Thunder Robotics, we have kits for all classes 
-                    you register and attend. Letting you on the first hand experience on all our projects.
+                <h2 style="margin-top: 50px;">Our Mission</h2>
+                <p style="font-size: 25px;">
+                    <ul class="list">
+                        <li>Empowering individuals for future technological advancements.</li>
+                        <li>Offering a collaborative learning environment.</li>
+                        <li>Equipping students with hands-on practical skills.</li>
+                        <li>Providing comprehensive IoT robotic education.</li>
+                        
+                    </ul>
                 </p>
             </div>
         </div>
 
         <div class="flex-container">
             <div class="flex-item-left" style="background-color: #87F6FF; color: #616163">
-                <h2 style="margin-top: 70px;">Interactive Class and Committed Staff</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                    We as technology and robotics lover too are committed to bringing the very best class experience to you
-                    and you kid. Every staff of our center are profesionnaly trained and has experience in the field for
-                    more than 3 years.
+                <h2 style="margin-top: 70px;">Our Team</h2>
+                <p style="font-size: 25px; ">
+                    <ul class="list">
+                        <li>We have provided quality lecturer to teach and share learning knowledge.</li>
+                        <li>Strong communication and interpersonal skills.</li>
+                        <li>Providing individualized attention and guidance.</li>
+                        <li>Inspiring and motivating students to reach their full potential.</li>
+                        
+                    </ul>
                 </p>
             </div>
 
             <div class="flex-item-right">
-                <img src="images/interactive class.webp" height="400px" width="500xp">
+                <img src="images/ourteacher.jpg" height="400px" width="500xp">
             </div>
         </div>
 
         <div class="flex-container">
             <div class="flex-item-left">
-                <img src="images/interactive class.webp" height="400px" width="500xp">
+                <img src="images/asset.jpg" height="400px" width="500xp">
             </div>
 
             <div class="flex-item-right" style="background-color: #87F6FF; color: #616163"> 
-                <h2 style="margin-top: 70px;">Interactive Class and Committed Staff</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                    We as technology and robotics lover too are committed to bringing the very best class experience to you
-                    and you kid. Every staff of our center are profesionnaly trained and has experience in the field for
-                    more than 3 years.
+                <h2 style="margin-top: 70px;">Our Asset Equipment & Software</h2>
+                <p style="font-size: 25px; ">
+                    <ul class="list">
+                        <li>We have provided asset equipment and software for student to use.</li>
+                        <li>High-performance computers and workstations.</li>
+                        <li>Advanced sensors and actuators for robotics applications.</li>
+                        <li>Industry-standard software for CAD/CAM and design.</li>
+                        
+                    </ul>
                 </p>
             </div>
         </div>

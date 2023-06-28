@@ -31,21 +31,35 @@
 
             <div class="flex-item-right" style="background-color: #87F6FF; color: #616163;">
                 <h2 style="margin-top: 50px;">Smart Alarm Clock</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                This IoT-based alarm clock functions not only as an alarm clock to wake you up every morning,
-                but it can convert into a fully-functional device capable of performing other tasks as well.
+                <p style="font-size: 25px;">
+                    <ul class="list">
+                        <li>Created an IoT-based alarm clock with customizable features.</li>
+                        <li>Enabled multi-functionality for various tasks beyond waking up.</li>
+                        <li>Intuitive user interface for easy setup and customization.</li>
+                        <li>Seamless connectivity with other smart devices.</li>
+                        <li>Real-time weather information and personalized wake-up routines.</li>
+                        <li>Smart analysis of sleep patterns for better sleep quality.</li>
+                        
+                    </ul>
                 </p>
+                <h3 class="Developer">Developers : Kayson , Sam</h3>
             </div>
         </div>
 
         <div class="flex-container">
             <div class="flex-item-left" style="background-color: #87F6FF; color: #616163">
                 <h2 style="margin-top: 70px;">Smart Parking System</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                This system uses an IR sensor to monitor the entire area during the run time and provide you with an image for the same.
-                This allows you to see any free spaces in the parking lot and drive straight to it without wasting any time looking for a parking space.
-                Also, the system is tuned to open the car gate n only if there are empty slots available in a parking space.
+                <p style="font-size: 25px; ">
+                <ul class="list">
+                    <li>Developed an IoT-based system for efficient parking management.</li>
+                    <li>Utilized IR sensors to monitor and detect available parking spaces in real-time.</li>
+                    <li>Provided users with a visual representation of parking availability.</li>
+                    <li>Automated car gate opening based on available parking slots.</li>
+                    <li>Enhanced overall parking efficiency and reduced traffic congestion.</li>
+                        
+                   </ul>
                 </p>
+                <h3 class="Developer">Developers : JohnRison , Winson</h3>
             </div>
 
             <div class="flex-item-right">
@@ -60,15 +74,17 @@
 
             <div class="flex-item-right" style="background-color: #87F6FF; color: #616163"> 
                 <h2 style="margin-top: 70px;">Smart Anti-Thief System</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                This IoT-based security system monitors the whole floor for odd movement.
-                When switched on, a single movement might activate an alarm, alerting property owners to undesirable guests.
-                Like this.  The Piezo sensor is activated when you leave a building.
-                monitoring property activity.The sensor sends data to the microcontroller,
-                which then signals the camera to take an image of an intruder.
-                Users' devices get this photo immediately. 
+                <p style="font-size: 25px; ">
+                <ul class="list">
+                    <li>Monitors the entire floor for odd movement.</li>
+                    <li>Activates an alarm when detecting unwanted guests.</li>
+                    <li>Utilizes a Piezo sensor to detect movements when leaving a building.</li>
+                    <li>Captures an image of an intruder using a connected camera.</li>
+                    <li>Instantly sends the captured photo to users' devices.</li>
+                        
+                   </ul>
                 </p>
-
+                <h3 class="Developer">Developers : Vincent , Elma</h3>
             </div>
         </div>
     </body>

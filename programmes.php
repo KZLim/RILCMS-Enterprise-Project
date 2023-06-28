@@ -29,21 +29,41 @@
             </div>
 
             <div class="flex-item-right" style="background-color: #87F6FF; color: #616163;">
-                <h2 style="margin-top: 50px;">Power Electronic</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                Power electronics is the branch of electrical engineering that deals with
-                the processing of high voltages and currents to deliver power that supports a variety of needs. 
+                <h2 style="margin-top: 50px;font-weight:bold;text-align:left;padding-left:30px;">Robotic Entry Level</h2>
+                <h3 style="font-size:25px;text-align:left;padding-left:30px;">Course Review</h3>
+                <p style="font-size: 25px;">
+                    <ul class="list">
+                        <li>Provided lesson of math and science concepts.</li>
+                        <li>Provide fully face to face time with student.</li>
+                        <li>Learning basic level of the robotic lesson. </li>
+                        <li>Provide mini-project for student to challenge.</li>
+                        <li>Monday | 9 am - 11 am</li>
+                        <li>Wednesday | 12 pm - 3 pm</li>
+                        <li>Thursday | 1 pm - 4 pm</li>
+                        
+                   </ul>
                 </p>
+                <a class="click-button" href="register.php">Register Now</a>
             </div>
         </div>
 
         <div class="flex-container">
             <div class="flex-item-left" style="background-color: #87F6FF; color: #616163">
-                <h2 style="margin-top: 70px;">Mechanical Engineering</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                Mechanical engineering is a multidisciplinary and diverse course
-                that involves the understanding of objects and systems in their movements.
+                <h2 style="margin-top: 50px;font-weight:bold;text-align:left;padding-left:30px;">Robotics Advanced Level</h2>
+                <h3 style="font-size:25px;text-align:left;padding-left:30px;">Course Review</h3>
+                <p style="font-size: 25px; ">
+                   <ul class="list">
+                        <li>Advanced concepts and techniques in robotics.</li>
+                        <li>In-depth exploration of robotic programming and control.</li>
+                        <li>Hands-on projects to apply advanced robotics knowledge.</li>
+                        <li>Introduction to artificial intelligence in robotics.</li>
+                        <li>Collaborative team projects to enhance problem-solving skills.</li>
+                        <li>Monday | 9 am - 11 am</li>
+                        <li>Wednesday | 12 pm - 3 pm</li>
+                        <li>Thursday | 1 pm - 4 pm</li>
+                   </ul>
                 </p>
+                <a class="click-button" href="register.php">Register Now</a>
             </div>
 
             <div class="flex-item-right">
@@ -53,17 +73,25 @@
 
         <div class="flex-container">
             <div class="flex-item-left">
-                <img src="images/programmes-electricDrives.jpg" height="400px" width="500xp">
+                <img src="images/programmes-ArduinoClass.jpg" height="400px" width="500xp">
             </div>
 
             <div class="flex-item-right" style="background-color: #87F6FF; color: #616163"> 
-                <h2 style="margin-top: 70px;">Electric Drives</h2>
-                <p style="font-size: 25px; padding: 20px;">
-                Electric drives are flexible because their performance can be controlled effectively
-                by using electronic devices such as SCRs, IGBTs and microcontrollers.
-                Available in wide range of torque, speed and power.
-                Compact in size; electric drives occupy less space.
+                <h2 style="margin-top: 50px;font-weight:bold;text-align:left;padding-left:30px;">Arduino Class</h2>
+                <h3 style="font-size:25px;text-align:left;padding-left:30px;">Course Review</h3>
+                <p style="font-size: 25px;">
+                    <ul class="list">
+                        <li>Introduction to Arduino platform and its components.</li>
+                        <li>Hands-on projects to learn basic electronics and programming concepts.</li>
+                        <li>Building and programming Arduino circuits.</li>
+                        <li>Exploring various sensors, actuators, and modules compatible with Arduino.</li>
+                        <li>Creating interactive projects and prototypes.</li>
+                        <li>Monday | 9 am - 11 am</li>
+                        <li>Wednesday | 12 pm - 3 pm</li>
+                        <li>Thursday | 1 pm - 4 pm</li>
+                   </ul>
                 </p>
+                <a class="click-button" href="register.php">Register Now</a>
             </div>
         </div>
     </body>

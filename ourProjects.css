@@ -57,3 +57,29 @@
 .image-shadow{
     filter: drop-shadow(1px 1px 2px black);
 }
+
+.list {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 20px;
+    
+    
+  }
+
+  .list li::before {
+    content: '• '; /* Add the desired list label here */
+  }
+.list li{
+    font-weight: normal;
+}
+
+h2{
+    text-align: left;
+    margin-left: 30px;
+}
+.Developer{
+    background-color: bisque;
+    position: relative;
+    top: 75px;
+}
