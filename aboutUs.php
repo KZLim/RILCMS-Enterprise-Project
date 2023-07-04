@@ -18,7 +18,7 @@
         <div>
             <img src="images/about_us_img.jpg" alt="firstimg" width="100%" height="650px" style="filter: blur(1px);">
             <h1 class="image-caption"><b><u>About Us</u></b></h1>
-            <h2  class="image-caption" style="top: 300px; left:200px">Want to Know More About Us ?<br/>
+            <h2  class="image-caption" style="top: 300px; left:170px">Want to Know More About Us ?<br/>
                 Take a look at our legacy and what we aim to built<br/> See what we have in stored. </h2>
             <a class="image-caption glowButton" href="#knowMore" style="top: 430px;">Know More</a>
         </div>

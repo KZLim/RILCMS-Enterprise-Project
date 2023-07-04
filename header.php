@@ -13,29 +13,27 @@
     </head>
 
     <body>
-
-    
         <div class="header-container">
-          <div class="d-flex justify-content-around">
-            <div class="header-logo">
-              <img src="images/robot icon.png" width="100px" height="100px">
-            </div>
+			<div class="d-flex justify-content-around">
+				<div class="header-logo">
+					<img src="images/robot icon.png" width="100px" height="100px">
+				</div>
 
-            <div class="d-flex align-items-center">
-              <div class="d-flex justify-content-center">
-                <a href="homepage.php"><div class="p-2">Homepage</div></a>
-                <div class="p-2"><a href="programmes.php">Programmes</a></div>
-                <div class="p-2"><a href="ourProjects.php">Our Projects</a></div>
-                <div class="p-2"><a href="aboutUs.php">About Us</a></div>
-                <div class="p-2"><a href="locateUs.php">Locate Us</a></div>
-              </div>
-            </div>
-            <div class="d-flex align-items-center">
-              <div class="d-flex justify-content-center">
-                <div class="p-2"><a href="register.php">Enrol Now</a></div>
-              </div>
-            </div>
-          </div>
+				<div class="d-flex align-items-center">
+					<div class="d-flex justify-content-center">
+						<a href="homepage.php"><div class="p-2">Homepage</div></a>
+						<div class="p-2"><a href="programmes.php">Programmes</a></div>
+						<div class="p-2"><a href="ourProjects.php">Our Projects</a></div>
+						<div class="p-2"><a href="aboutUs.php">About Us</a></div>
+						<div class="p-2"><a href="locateUs.php">Locate Us</a></div>
+					</div>
+				</div>
+				<div class="d-flex align-items-center">
+					<div class="d-flex justify-content-center">
+						<div class="p-2"><a href="register.php">Enrol Now</a></div>
+					</div>
+				</div>
+			</div>
         </div>
 
         <script>
@@ -45,13 +43,13 @@
               if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
                 var headerElements = document.getElementsByClassName('header-container');
                 for(var i=0; i<headerElements.length; i++) { 
-                  headerElements[i].style.cssText = "height: 15vh; font-Size: 20px"; 
+                	headerElements[i].style.cssText = "height: 15vh; font-Size: 20px"; 
                 } 
               }
               else {
                 var headerElements = document.getElementsByClassName('header-container');
                 for(var i=0; i<headerElements.length; i++) { 
-                  headerElements[i].style.cssText = "height: 17vh; font-Size: 20px"; 
+                	headerElements[i].style.cssText = "height: 17vh; font-Size: 20px"; 
                 } 
               }
             }

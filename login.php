@@ -66,7 +66,6 @@
                         //$verify = password_verify($passwordData, $data1);
     
                         if($idData == $data1 && $passwordData == $data3){
-                            $goAhead = true;
                             session_start();
                             $_SESSION["identifier_id"] = $data1;
                             echo'<script>window.location.href = "admin_dashboard.php"</script>';
@@ -91,7 +90,6 @@
                         //$verify = password_verify($passwordData, $data1);
     
                         if($idData == $data1 && $passwordData == $data3){
-                            $goAhead = true;
                             session_start();
                             $_SESSION["identifier_id"] = $data1;
                             $_SESSION["identifier_name"] = $data2;
